@@ -52,7 +52,18 @@ lesson-2/
 lesson-3/
 lesson-4/
 project/
+students/
 ```
+
+## Students Workspace (`students/`)
+
+Each student can create their own folder inside `students/` for practice and experiments, for example `students/lesson_01/`.
+
+Important:
+
+- The `students/` folder is ignored by Git (configured in `.gitignore`).
+- This means students can freely add, edit, and delete files there without creating repository changes.
+- Course lesson content in `Lesson_01` to `Lesson_04` should remain unchanged unless instructed.
 
 ## Tools
 
@@ -67,6 +78,7 @@ project/
 2. Enter the lesson folder.
 3. Complete the tasks and examples for that lesson.
 4. Test your code in the browser.
+5. Use `students/lesson_01/` for personal practice files.
 
 ## Academic Integrity
 
