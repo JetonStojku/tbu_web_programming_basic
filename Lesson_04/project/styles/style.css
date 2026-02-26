@@ -1,0 +1,51 @@
+:root {
+  --brand-dark: #1f3a5f;
+  --brand-mid: #2c5b8f;
+  --brand-light: #eef5ff;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #1e293b;
+}
+
+.topbar {
+  background: linear-gradient(90deg, var(--brand-dark), var(--brand-mid));
+}
+
+.hero-section {
+  background: var(--brand-light);
+  border-bottom: 1px solid #d9e6ff;
+}
+
+.custom-card {
+  border: 1px solid #dbe7ff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(31, 58, 95, 0.08);
+}
+
+.custom-card .card-img-top {
+  height: 180px;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.service-box {
+  background-color: #fff;
+  border: 1px solid #dbe7ff;
+  border-radius: 12px;
+}
+
+.contact-form {
+  background-color: #fff;
+  border: 1px solid #dbe7ff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.site-footer {
+  border-top: 1px solid #dbe7ff;
+  background-color: #fff;
+}
