@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.site-header {
+  background-color: #1b4b91;
+  color: #fff;
+  padding: 16px;
+}
+
+.site-header h1 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 14px;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.photo {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 4px;
+  background-color: #fff;
+}
+
+.gallery {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
