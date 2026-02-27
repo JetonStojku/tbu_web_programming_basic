@@ -55,12 +55,3 @@ body {
   color: var(--text-light);
   border-color: #374151;
 }
-
-/* Show only selected movie details by hash target */
-.movie-detail {
-  display: none;
-}
-
-.movie-detail:target {
-  display: block;
-}
