@@ -3,7 +3,6 @@
   --bg-card: #1f2937;
   --text-light: #f3f4f6;
   --muted: #9ca3af;
-  --accent: #f59e0b;
 }
 
 body {
@@ -27,14 +26,23 @@ body {
   color: var(--text-light);
 }
 
+.movie-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 .card-img-top {
-  height: 320px;
+  height: 360px;
   object-fit: cover;
 }
 
 .detail-cover {
   height: 100%;
-  min-height: 280px;
+  min-height: 320px;
   object-fit: cover;
 }
 
@@ -42,12 +50,17 @@ body {
   color: var(--muted) !important;
 }
 
-.btn-outline-light {
-  border-color: #64748b;
-}
-
 .list-group-item {
   background-color: #111827;
   color: var(--text-light);
   border-color: #374151;
+}
+
+/* Show only selected movie details by hash target */
+.movie-detail {
+  display: none;
+}
+
+.movie-detail:target {
+  display: block;
 }

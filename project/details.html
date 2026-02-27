@@ -15,7 +15,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
-          <li class="nav-item"><a class="nav-link active" href="details.html">Details</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         </ul>
       </div>
@@ -24,82 +23,107 @@
 
   <main class="container py-5">
     <h1 class="mb-4">Movie Details</h1>
+    <p class="text-muted mb-4">Open this page from a movie cover to display one movie.</p>
 
     <section id="ff10" class="movie-detail card mb-4">
       <div class="row g-0">
         <div class="col-md-3"><img src="images/fast and furious 10.jpg" class="img-fluid rounded-start detail-cover" alt="Fast and Furious 10 cover" /></div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h2 class="h4 mb-0">Fast and Furious 10</h2>
-              <span class="badge text-bg-warning">7.2/10</span>
-            </div>
-            <p class="text-muted">Action / Adventure | 141 min | 2023</p>
-            <p>Dom Toretto and his crew must protect their family while a new enemy from the past seeks revenge.</p>
-            <div class="mb-3">
-              <button class="btn btn-sm btn-primary me-2">Edit Movie</button>
-              <button class="btn btn-sm btn-danger">Remove Movie</button>
-            </div>
-            <h3 class="h6">Comments</h3>
-            <ul class="list-group list-group-flush mb-2">
-              <li class="list-group-item">Alex: Great action scenes and strong pace.</li>
-              <li class="list-group-item">Maria: Fun movie, but story is simple.</li>
-            </ul>
-            <p class="mb-0"><strong>Average User Rate:</strong> 4.0 / 5</p>
-          </div>
-        </div>
+        <div class="col-md-9"><div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2"><h2 class="h4 mb-0">Fast and Furious 10</h2><span class="badge text-bg-warning">7.2/10</span></div>
+          <p class="text-muted">Action / Adventure | 141 min | 2023</p>
+          <p>Dom Toretto and his crew must protect their family while a new enemy from the past seeks revenge.</p>
+          <div class="mb-3"><button class="btn btn-sm btn-primary me-2">Edit Movie</button><button class="btn btn-sm btn-danger">Remove Movie</button></div>
+          <h3 class="h6">User Comments</h3>
+          <ul class="list-group list-group-flush mb-3"><li class="list-group-item">Alex: Great action scenes and strong pace.</li><li class="list-group-item">Maria: Fun movie, but story is simple.</li></ul>
+          <p><strong>Average User Rate:</strong> 4.0 / 5</p>
+          <h4 class="h6">Add New Comment</h4>
+          <form class="row g-2"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your name" /></div><div class="col-md-4"><select class="form-select"><option>Rate: 5</option><option>Rate: 4</option><option>Rate: 3</option><option>Rate: 2</option><option>Rate: 1</option></select></div><div class="col-12"><textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea></div><div class="col-12"><button type="button" class="btn btn-warning">Post Comment</button></div></form>
+        </div></div>
       </div>
     </section>
 
     <section id="jw5" class="movie-detail card mb-4">
       <div class="row g-0">
         <div class="col-md-3"><img src="images/john weak 5.webp" class="img-fluid rounded-start detail-cover" alt="John Wick 5 cover" /></div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h2 class="h4 mb-0">John Wick 5</h2>
-              <span class="badge text-bg-warning">8.4/10</span>
-            </div>
-            <p class="text-muted">Action / Thriller | 150 min | 2025</p>
-            <p>John faces global assassins while trying to end the conflict with the High Table forever.</p>
-            <div class="mb-3">
-              <button class="btn btn-sm btn-primary me-2">Edit Movie</button>
-              <button class="btn btn-sm btn-danger">Remove Movie</button>
-            </div>
-            <h3 class="h6">Comments</h3>
-            <ul class="list-group list-group-flush mb-2">
-              <li class="list-group-item">Diana: Excellent choreography and visuals.</li>
-              <li class="list-group-item">Noah: Best action movie in the list.</li>
-            </ul>
-            <p class="mb-0"><strong>Average User Rate:</strong> 4.6 / 5</p>
-          </div>
-        </div>
+        <div class="col-md-9"><div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2"><h2 class="h4 mb-0">John Wick 5</h2><span class="badge text-bg-warning">8.4/10</span></div>
+          <p class="text-muted">Action / Thriller | 150 min | 2025</p>
+          <p>John faces global assassins while trying to end the conflict with the High Table forever.</p>
+          <div class="mb-3"><button class="btn btn-sm btn-primary me-2">Edit Movie</button><button class="btn btn-sm btn-danger">Remove Movie</button></div>
+          <h3 class="h6">User Comments</h3>
+          <ul class="list-group list-group-flush mb-3"><li class="list-group-item">Diana: Excellent choreography and visuals.</li><li class="list-group-item">Noah: Best action movie in the list.</li></ul>
+          <p><strong>Average User Rate:</strong> 4.6 / 5</p>
+          <h4 class="h6">Add New Comment</h4>
+          <form class="row g-2"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your name" /></div><div class="col-md-4"><select class="form-select"><option>Rate: 5</option><option>Rate: 4</option><option>Rate: 3</option><option>Rate: 2</option><option>Rate: 1</option></select></div><div class="col-12"><textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea></div><div class="col-12"><button type="button" class="btn btn-warning">Post Comment</button></div></form>
+        </div></div>
       </div>
     </section>
 
-    <section id="meg" class="movie-detail card">
+    <section id="lastbreathe" class="movie-detail card mb-4">
+      <div class="row g-0">
+        <div class="col-md-3"><img src="images/last breathe.jpg" class="img-fluid rounded-start detail-cover" alt="Last Breathe cover" /></div>
+        <div class="col-md-9"><div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2"><h2 class="h4 mb-0">Last Breathe</h2><span class="badge text-bg-warning">7.0/10</span></div>
+          <p class="text-muted">Drama | 112 min | 2024</p>
+          <p>A rescue team races against time in a survival story set under extreme conditions.</p>
+          <div class="mb-3"><button class="btn btn-sm btn-primary me-2">Edit Movie</button><button class="btn btn-sm btn-danger">Remove Movie</button></div>
+          <h3 class="h6">User Comments</h3>
+          <ul class="list-group list-group-flush mb-3"><li class="list-group-item">Emma: Emotional and very intense.</li><li class="list-group-item">Daniel: Strong acting performances.</li></ul>
+          <p><strong>Average User Rate:</strong> 4.1 / 5</p>
+          <h4 class="h6">Add New Comment</h4>
+          <form class="row g-2"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your name" /></div><div class="col-md-4"><select class="form-select"><option>Rate: 5</option><option>Rate: 4</option><option>Rate: 3</option><option>Rate: 2</option><option>Rate: 1</option></select></div><div class="col-12"><textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea></div><div class="col-12"><button type="button" class="btn btn-warning">Post Comment</button></div></form>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="meg" class="movie-detail card mb-4">
       <div class="row g-0">
         <div class="col-md-3"><img src="images/meg.webp" class="img-fluid rounded-start detail-cover" alt="The Meg cover" /></div>
-        <div class="col-md-9">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h2 class="h4 mb-0">The Meg</h2>
-              <span class="badge text-bg-warning">6.8/10</span>
-            </div>
-            <p class="text-muted">Sci-Fi / Action | 113 min | 2023</p>
-            <p>A deep-sea team encounters a giant predator while exploring a dangerous underwater trench.</p>
-            <div class="mb-3">
-              <button class="btn btn-sm btn-primary me-2">Edit Movie</button>
-              <button class="btn btn-sm btn-danger">Remove Movie</button>
-            </div>
-            <h3 class="h6">Comments</h3>
-            <ul class="list-group list-group-flush mb-2">
-              <li class="list-group-item">Sofia: Entertaining and easy to watch.</li>
-              <li class="list-group-item">Liam: Good visuals, simple characters.</li>
-            </ul>
-            <p class="mb-0"><strong>Average User Rate:</strong> 3.7 / 5</p>
-          </div>
-        </div>
+        <div class="col-md-9"><div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2"><h2 class="h4 mb-0">The Meg</h2><span class="badge text-bg-warning">6.8/10</span></div>
+          <p class="text-muted">Sci-Fi / Action | 113 min | 2023</p>
+          <p>A deep-sea team encounters a giant predator while exploring a dangerous underwater trench.</p>
+          <div class="mb-3"><button class="btn btn-sm btn-primary me-2">Edit Movie</button><button class="btn btn-sm btn-danger">Remove Movie</button></div>
+          <h3 class="h6">User Comments</h3>
+          <ul class="list-group list-group-flush mb-3"><li class="list-group-item">Sofia: Entertaining and easy to watch.</li><li class="list-group-item">Liam: Good visuals, simple characters.</li></ul>
+          <p><strong>Average User Rate:</strong> 3.7 / 5</p>
+          <h4 class="h6">Add New Comment</h4>
+          <form class="row g-2"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your name" /></div><div class="col-md-4"><select class="form-select"><option>Rate: 5</option><option>Rate: 4</option><option>Rate: 3</option><option>Rate: 2</option><option>Rate: 1</option></select></div><div class="col-12"><textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea></div><div class="col-12"><button type="button" class="btn btn-warning">Post Comment</button></div></form>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="avatar3" class="movie-detail card mb-4">
+      <div class="row g-0">
+        <div class="col-md-3"><img src="images/avatar 3.jpg" class="img-fluid rounded-start detail-cover" alt="Avatar 3 cover" /></div>
+        <div class="col-md-9"><div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2"><h2 class="h4 mb-0">Avatar 3</h2><span class="badge text-bg-warning">8.0/10</span></div>
+          <p class="text-muted">Sci-Fi / Adventure | 165 min | 2025</p>
+          <p>Jake Sully's family explores new clans and faces a major threat on Pandora.</p>
+          <div class="mb-3"><button class="btn btn-sm btn-primary me-2">Edit Movie</button><button class="btn btn-sm btn-danger">Remove Movie</button></div>
+          <h3 class="h6">User Comments</h3>
+          <ul class="list-group list-group-flush mb-3"><li class="list-group-item">Olivia: Beautiful world and effects.</li><li class="list-group-item">Ethan: Great visuals and soundtrack.</li></ul>
+          <p><strong>Average User Rate:</strong> 4.4 / 5</p>
+          <h4 class="h6">Add New Comment</h4>
+          <form class="row g-2"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your name" /></div><div class="col-md-4"><select class="form-select"><option>Rate: 5</option><option>Rate: 4</option><option>Rate: 3</option><option>Rate: 2</option><option>Rate: 1</option></select></div><div class="col-12"><textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea></div><div class="col-12"><button type="button" class="btn btn-warning">Post Comment</button></div></form>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="lurker" class="movie-detail card">
+      <div class="row g-0">
+        <div class="col-md-3"><img src="images/lurker.gif" class="img-fluid rounded-start detail-cover" alt="Lurker cover" /></div>
+        <div class="col-md-9"><div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2"><h2 class="h4 mb-0">Lurker</h2><span class="badge text-bg-warning">6.5/10</span></div>
+          <p class="text-muted">Horror / Mystery | 104 min | 2024</p>
+          <p>A group of friends discovers a hidden camera network and a stalker known as The Lurker.</p>
+          <div class="mb-3"><button class="btn btn-sm btn-primary me-2">Edit Movie</button><button class="btn btn-sm btn-danger">Remove Movie</button></div>
+          <h3 class="h6">User Comments</h3>
+          <ul class="list-group list-group-flush mb-3"><li class="list-group-item">Mia: Creepy atmosphere from start to finish.</li><li class="list-group-item">James: Good suspense for a demo movie page.</li></ul>
+          <p><strong>Average User Rate:</strong> 3.5 / 5</p>
+          <h4 class="h6">Add New Comment</h4>
+          <form class="row g-2"><div class="col-md-4"><input type="text" class="form-control" placeholder="Your name" /></div><div class="col-md-4"><select class="form-select"><option>Rate: 5</option><option>Rate: 4</option><option>Rate: 3</option><option>Rate: 2</option><option>Rate: 1</option></select></div><div class="col-12"><textarea class="form-control" rows="3" placeholder="Write your comment..."></textarea></div><div class="col-12"><button type="button" class="btn btn-warning">Post Comment</button></div></form>
+        </div></div>
       </div>
     </section>
   </main>
