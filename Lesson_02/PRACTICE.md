@@ -4,25 +4,36 @@ Use the files in `project/` to complete this practice.
 
 ## Practice Tasks
 
-1. Change the website title and heading on all 4 pages.
-2. Update menu link text and make sure navigation works on each page.
-3. In `styles/style.css`, change:
+1. Update the page title and main heading on all 4 pages.
+2. Verify navigation links work from every page.
+3. In `styles/style.css`, customize:
+   - page background color
+   - menu background and link colors
+   - content spacing (`padding` and `margin`)
+4. Add one more image to `gallery.html` from `project/images/`.
+5. Add a consistent footer to all 4 pages.
 
-- background color of the page
-- menu color
-- content box spacing (`margin` or `padding`)
-
-1. Add one more image to `gallery.html` from `project/images/`.
-2. Add a simple footer to all 4 pages.
-
-## CSS Practice: 3 Methods
+## CSS Methods Practice
 
 1. Add one inline CSS example in `contact.html`.
-2. Add one internal CSS example (with `<style>`) in `about.html`.
-3. Keep the main styling in `styles/style.css` (external CSS).
+2. Add one internal CSS block (`<style>`) in `about.html`.
+3. Keep most styles in `styles/style.css`.
+
+## Expected Output Checklist
+
+- External CSS controls the overall look.
+- At least 3 different selectors are used (element, class, ID).
+- Hover state exists for menu links or gallery images.
+- Footer style is consistent across all pages.
 
 ## Extra Challenge (Optional)
 
-1. Highlight the active menu link on each page.
-2. Center all page content with a consistent max width.
-3. Add hover effect to gallery images.
+1. Highlight the active menu item on each page.
+2. Center content with a shared `.container` class and max width.
+3. Add a smooth hover effect for gallery images.
+
+## Self-Review Questions
+
+- Does your CSS avoid duplicate rules?
+- Can you identify where specificity changes output?
+- Is visual spacing consistent between sections?

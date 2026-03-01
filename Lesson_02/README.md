@@ -1,16 +1,21 @@
 # Lesson 2: CSS Fundamentals
 
-This lesson introduces basic CSS styling and shows how to connect one stylesheet to multiple HTML pages.
+This lesson introduces CSS basics and demonstrates how one shared stylesheet can control design across multiple pages.
+
+## Prerequisites
+
+- Completed Lesson 1 (HTML structure and semantic tags)
+- Basic familiarity with editing multiple files
 
 ## Learning Objectives
 
 By the end of this lesson, students should be able to:
 
-- Apply simple CSS rules for colors, spacing, and typography
-- Use one shared CSS file for multiple pages
-- Build a basic 4-page website with a top navigation menu
-- Organize files into folders (`styles/`, `images/`)
-- Target HTML elements using different CSS selectors
+- Apply CSS rules for colors, typography, spacing, and borders
+- Use an external stylesheet across multiple HTML pages
+- Build and style a basic 4-page website with top navigation
+- Use element, class, ID, and state selectors correctly
+- Understand basic cascade and specificity behavior
 
 ## Lesson Files
 
@@ -24,52 +29,40 @@ By the end of this lesson, students should be able to:
 
 ## Project Requirements
 
-- 4 pages
-- A simple top menu on each page
-- CSS in a separate file inside a folder
-- Use photos from the `images/` folder
+- 4 connected pages
+- Top menu on each page
+- Shared CSS file in `project/styles/style.css`
+- Images loaded from `project/images/`
 
-## Recommended Lesson Flow
+## Ways to Add CSS
 
-1. Explain what CSS is and why separation of structure (HTML) and style (CSS) is useful.
-2. Show the 3 ways to include CSS.
-3. Teach selectors (how to target tags/elements).
-4. Edit `project/styles/style.css` together in class.
-5. Let students complete `PRACTICE.md` tasks.
-
-## Ways to Add CSS to HTML
-
-1. Inline CSS (inside an element)
+### 1. Inline CSS
 
 ```html
-<p style="color: blue;">This is inline CSS.</p>
+<p style="color: blue;">Inline CSS example.</p>
 ```
 
-2. Internal CSS (inside the `<style>` tag in `<head>`)
+### 2. Internal CSS
 
 ```html
-<head>
-  <style>
-    p {
-      color: blue;
-    }
-  </style>
-</head>
+<style>
+  p {
+    color: blue;
+  }
+</style>
 ```
 
-3. External CSS (recommended, separate file)
+### 3. External CSS (recommended)
 
 ```html
-<head>
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
+<link rel="stylesheet" href="styles/style.css" />
 ```
 
-For this lesson project, use the external CSS approach.
+For this project, use external CSS as the main styling method.
 
-## How to Target Elements in CSS (Selectors)
+## CSS Selectors You Should Practice
 
-1. Element selector (targets all tags of one type)
+### Element selector
 
 ```css
 p {
@@ -77,7 +70,7 @@ p {
 }
 ```
 
-2. Class selector (reusable style for multiple elements)
+### Class selector
 
 ```css
 .menu {
@@ -85,61 +78,79 @@ p {
 }
 ```
 
-3. ID selector (single unique element)
+### ID selector
 
 ```css
 #main-title {
-  font-size: 28px;
+  font-size: 2rem;
 }
 ```
 
-4. Group selector (same style for multiple selectors)
-
-```css
-h1,
-h2,
-h3 {
-  font-family: Arial, sans-serif;
-}
-```
-
-5. Descendant selector (element inside another element)
+### Descendant and pseudo-class
 
 ```css
 .menu a {
   color: white;
 }
-```
 
-6. Child selector (direct child only)
-
-```css
-nav > a {
-  margin-right: 10px;
+.menu a:hover {
+  text-decoration: underline;
 }
 ```
 
-7. Pseudo-class selector (state-based style)
+## Box Model and Spacing
+
+Every element uses this structure:
+
+- Content
+- Padding
+- Border
+- Margin
+
+Example:
 
 ```css
-a:hover {
-  text-decoration: underline;
+.card {
+  padding: 16px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+```
+
+## Simple Multi-Page Style Example
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f9fc;
+  color: #222;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu {
+  background: #1b4b91;
+  padding: 12px 20px;
+}
+
+.menu a {
+  color: #fff;
+  margin-right: 14px;
+  text-decoration: none;
 }
 ```
 
 ## Cascade and Specificity (Basic Rules)
 
-- Inline CSS has higher priority than internal/external CSS.
-- ID selectors are more specific than class selectors.
-- Class selectors are more specific than element selectors.
-- If specificity is equal, the last rule in the file wins.
-
-## Common CSS Properties for This Lesson
-
-- Text: `color`, `font-size`, `font-family`, `text-align`
-- Box model: `margin`, `padding`, `border`, `width`, `max-width`
-- Background: `background-color`
-- Layout basics: `display`, `gap`
+- Inline styles override internal/external styles.
+- ID selectors are stronger than class selectors.
+- Class selectors are stronger than element selectors.
+- If specificity is equal, the later rule wins.
 
 ## Main Learning Resources (W3Schools)
 
@@ -153,8 +164,8 @@ a:hover {
 
 ## Submission Checklist
 
-- All 4 pages open correctly.
-- Top menu links work on every page.
-- Styles are stored in `project/styles/style.css`.
-- Images are loaded from `project/images/`.
-- Code is clean and consistently indented.
+- All 4 pages open and link correctly.
+- Shared stylesheet is used on all pages.
+- Menu style is consistent across pages.
+- Images load from the local `images/` folder.
+- Code is formatted and readable.

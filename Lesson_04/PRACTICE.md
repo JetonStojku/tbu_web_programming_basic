@@ -16,9 +16,22 @@ Use files from `project/` and complete all tasks.
 2. Add one custom class not provided by Bootstrap.
 3. Make one visual override of a Bootstrap component (example: card border radius or navbar background).
 
+## Expected Output Checklist
+
+- Theme variables are applied consistently.
+- Pages share a unified design language.
+- At least one component has meaningful custom styling.
+- Layout remains responsive on mobile and desktop.
+
 ## Extra Challenge (Optional)
 
 1. Add a responsive hero background image.
 2. Add hover effects for cards using custom CSS transitions.
 3. Create a dark variant theme by changing only CSS variables.
+
+## Self-Review Questions
+
+- Are custom styles reusable or repeated inline?
+- Do overrides improve design without breaking Bootstrap behavior?
+- Is spacing consistent between major sections?
 

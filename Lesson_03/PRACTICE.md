@@ -1,6 +1,6 @@
 # Lesson 3 Practice
 
-Use the files in `project/` for all tasks.
+Use files in `project/` for all tasks.
 
 ## Practice Tasks
 
@@ -12,17 +12,17 @@ Use the files in `project/` for all tasks.
 - one button group
 - one badge inside a heading
 
-4. On `forms.html`, add:
+4. In `forms.html`, add:
 
 - one select field
 - one checkbox
 - one submit and one reset button
 
-5. Add `img-fluid` class to at least one image.
+5. Add `img-fluid` to at least one image.
 
-## Component Groups Practice
+## Component Groups Coverage
 
-Make sure your project contains examples from these groups:
+Ensure your project includes examples from:
 
 - Layout
 - Forms
@@ -34,3 +34,16 @@ Make sure your project contains examples from these groups:
 1. Add an accordion or collapse example.
 2. Add a footer styled with Bootstrap utility classes.
 3. Add one custom style in `styles/style.css` that improves visual consistency.
+
+## Expected Output Checklist
+
+- Grid columns stack correctly on smaller screens.
+- At least two utility classes are used meaningfully.
+- Form labels are attached to each input.
+- Navbar is consistent on every page.
+
+## Self-Review Questions
+
+- Which parts use Bootstrap classes vs custom CSS?
+- Does layout remain readable on mobile width?
+- Are component styles consistent across pages?

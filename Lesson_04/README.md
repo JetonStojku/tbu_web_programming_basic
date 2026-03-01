@@ -2,13 +2,19 @@
 
 This lesson combines Bootstrap 5 components with a custom stylesheet to create a cleaner and more unique design.
 
+## Prerequisites
+
+- Completed Lesson 3 (Bootstrap basics)
+- Basic understanding of CSS selectors and specificity
+
 ## Learning Objectives
 
 By the end of this lesson, students should be able to:
+
 - Build multi-page websites with Bootstrap 5
 - Add and organize a separate custom CSS file
 - Override or extend Bootstrap styles safely
-- Keep design consistent across all pages
+- Apply reusable design decisions with CSS variables
 
 ## Lesson Files
 
@@ -37,9 +43,40 @@ By the end of this lesson, students should be able to:
 ## Recommended Workflow
 
 1. Build page structure and components with Bootstrap classes.
-2. Add a separate custom stylesheet.
-3. Add colors, spacing, borders and card styles in custom CSS.
-4. Re-check consistency across all pages.
+2. Define color and spacing variables in `:root`.
+3. Add custom classes for sections and reusable components.
+4. Override specific Bootstrap elements where needed.
+5. Check consistency across all pages and screen sizes.
+
+## Example: CSS Variables + Overrides
+
+```css
+:root {
+  --brand-primary: #0d6efd;
+  --brand-dark: #0b2447;
+  --surface: #f8fafc;
+}
+
+body {
+  background: var(--surface);
+}
+
+.navbar {
+  background-color: var(--brand-dark) !important;
+}
+
+.custom-card {
+  border-radius: 14px;
+  border: 1px solid #dbe3ef;
+}
+```
+
+## Common Pitfalls
+
+- Overusing `!important` for every style
+- Mixing many unrelated color values
+- Copying inline styles instead of reusable classes
+- Inconsistent spacing between sections
 
 ## Main Learning Resources (W3Schools)
 
@@ -54,7 +91,7 @@ By the end of this lesson, students should be able to:
 
 - All 4 pages are connected and working.
 - Bootstrap classes are used correctly.
-- `style.css` adds clear custom design changes.
-- Custom styles are reusable and not duplicated inline.
-- Code is readable and consistently formatted.
+- `style.css` contains clear, reusable custom styles.
+- Visual style is consistent across pages.
+- Code is readable and cleanly formatted.
 

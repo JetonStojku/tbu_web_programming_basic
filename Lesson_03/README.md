@@ -1,6 +1,11 @@
 # Lesson 3: Bootstrap 5 Basic
 
-This lesson introduces Bootstrap 5 and focuses on understanding the main Bootstrap component groups.
+This lesson introduces Bootstrap 5 and shows how to build responsive interfaces quickly using prebuilt classes and components.
+
+## Prerequisites
+
+- Completed Lesson 2 (HTML + CSS fundamentals)
+- Comfortable with multi-page project structure
 
 ## Learning Objectives
 
@@ -10,7 +15,7 @@ By the end of this lesson, students should be able to:
 - Use Bootstrap layout classes (container, row, col)
 - Use common UI components (buttons, cards, alerts, badges, navbar)
 - Build and style forms with Bootstrap classes
-- Understand Bootstrap component groups and when to use each group
+- Apply utility classes for spacing and alignment
 
 ## Lesson Files
 
@@ -24,50 +29,12 @@ By the end of this lesson, students should be able to:
 
 ## Project Structure and Requirements
 
-- 4 pages
-- Top menu on all pages
-- Bootstrap 5 via CDN
+- 4 pages with working navigation
+- Bootstrap 5 loaded via CDN
 - Optional custom CSS in `project/styles/style.css`
-- Local images in `project/images/` (copied from Lesson 2)
+- Images loaded from `project/images/`
 
-## Bootstrap Component Groups
-
-1. Layout Group
-
-- `container`, `container-fluid`
-- Grid system: `row`, `col-*`
-- Spacing utilities for layout tuning
-
-2. Content Group
-
-- Typography classes (`lead`, heading sizes)
-- Tables
-- Images (`img-fluid`)
-
-3. Forms Group
-
-- `form-control`, `form-label`, `form-select`
-- Input groups
-- Form validation classes
-
-4. Components Group
-
-- Buttons
-- Cards
-- Alerts
-- Badges
-- Navbar
-- Modal / Collapse / Accordion
-
-5. Helpers and Utilities
-
-- Colors (`text-*`, `bg-*`)
-- Spacing (`m-*`, `p-*`)
-- Display (`d-*`)
-- Flex (`d-flex`, `justify-content-*`, `align-items-*`)
-- Borders, shadows, rounded corners
-
-## How Bootstrap is Added
+## Bootstrap Setup
 
 ```html
 <link
@@ -82,13 +49,53 @@ Optional JavaScript bundle (for components like navbar toggler, collapse, modal)
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
+## Core Component Groups
+
+### 1. Layout
+
+- `container`, `container-fluid`
+- `row`, `col-*`
+- Responsive breakpoints (`col-md-6`, `col-lg-4`)
+
+Example:
+
+```html
+<div class="container py-4">
+  <div class="row g-3">
+    <div class="col-md-6 col-lg-4">Column 1</div>
+    <div class="col-md-6 col-lg-4">Column 2</div>
+    <div class="col-md-12 col-lg-4">Column 3</div>
+  </div>
+</div>
+```
+
+### 2. Components
+
+- Navbar
+- Alerts
+- Buttons and button groups
+- Cards
+- Badges
+
+### 3. Forms
+
+- `form-label`, `form-control`, `form-select`
+- `form-check` for checkboxes/radios
+- Spacing helpers for better visual structure
+
+### 4. Utilities
+
+- Spacing (`mt-*`, `p-*`, `g-*`)
+- Color (`text-*`, `bg-*`)
+- Display and flex (`d-*`, `justify-content-*`, `align-items-*`)
+
 ## Suggested Teaching Flow
 
-1. Compare plain HTML (Lesson 2) vs Bootstrap classes.
-2. Build page structure with container, rows, columns.
-3. Add ready-made components (buttons, alert, card).
-4. Build one form with Bootstrap form classes.
-5. Let students complete `PRACTICE.md`.
+1. Add CDN and confirm Bootstrap is loading.
+2. Build a responsive layout page with grid.
+3. Add components page with cards, alerts, badges, buttons.
+4. Build forms page with several input types.
+5. Add light custom CSS for branding consistency.
 
 ## Main Learning Resources (W3Schools)
 
@@ -103,7 +110,7 @@ Optional JavaScript bundle (for components like navbar toggler, collapse, modal)
 ## Submission Checklist
 
 - All 4 pages open and link correctly.
-- Navbar exists on each page.
-- Bootstrap classes are used consistently.
-- At least 3 different component groups are demonstrated.
-- Code is clean and readable.
+- Navbar is present and usable on each page.
+- Grid layout is responsive on at least two breakpoints.
+- Forms include labels and proper field structure.
+- Code is clean and consistently formatted.
